@@ -1,5 +1,5 @@
 ---
-pagetitle: "Your Project Title"
+pagetitle: "No More DUIVING"
 format:
   html:
     toc: false
@@ -11,7 +11,7 @@ format:
 # Your Project Title Here {.title}
 
 ::: {.subtitle}
-A catchy one-line description of your project
+:)
 :::
 
 ::: {.author-list}
