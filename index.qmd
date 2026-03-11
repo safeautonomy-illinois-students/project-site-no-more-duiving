@@ -50,9 +50,9 @@ format:
 
 ::: {.hero-teaser}
 
-<!-- Option A: Use a static image as the teaser
-![Teaser figure showing your method overview or key result.](static/images/placeholder-teaser.svg){.teaser-img}
--->
+<!-- Option A: Use a static image as the teaser-->
+<!-- ![Teaser figure showing your method overview or key result.](static/images/placeholder-teaser.svg){.teaser-img}-->
+
 
 <!-- Option B: Embed a video teaser (uncomment below, comment out image above)-->
 {{< video static/videos/GEM Driving.webm>}}
@@ -92,7 +92,7 @@ Experiments conducted in both simulation and real-world testing demonstrate that
 
 ::: {.video-container}
 <!-- Replace with your YouTube or local video embed -->
-{{< video https://www.youtube.com/embed/cSQTZoZPJzs >}}
+{{< video static/videos/GEM Driving.webm>}}
 :::
 
 :::
