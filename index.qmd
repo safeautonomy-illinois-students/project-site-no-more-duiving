@@ -71,17 +71,6 @@ format:
 ## Abstract {.section-title}
 
 ::: {.abstract-text}
-Replace this text with your project abstract. Describe the problem you are
-solving, the key insight or contribution of your work, and the main results.
-Keep it concise — typically 150–250 words. You can use **bold** and *italic*
-formatting to emphasize key terms.
-
-For example: We present a novel approach to [task] that achieves
-state-of-the-art results on [benchmark]. Our method leverages [key technique]
-to overcome [limitation of prior work]. Experiments demonstrate that our
-approach outperforms existing methods by [metric improvement] while requiring
-[efficiency gain].
-
 This project presents an autonomous robotaxi summon system for the Polaris GEM vehicle that navigates from a parking position to a user-specified GPS destination. The goal is to enable safe and reliable low-speed autonomous driving in a structured campus environment. The system integrates several modules including GPS-based goal reception, path planning, park-to-drive maneuvering, vision-based lane following, and obstacle detection.
 
 Our approach uses a GPS interface to receive a target coordinate from a mobile application and generates a set of waypoints that guide the vehicle through the drivable region. A park-to-drive controller performs the initial maneuver to exit the parking spot and align the vehicle with the road lane. During navigation, a camera-based perception pipeline detects lane boundaries to enable robust lane following using a closed-loop lateral and longitudinal controller. In addition, an obstacle detection module identifies traffic cones and stop signs and estimates their distance, enabling the vehicle to safely stop and automatically resume driving when the path becomes clear.
@@ -110,7 +99,6 @@ Experiments conducted in both simulation and real-world testing demonstrate that
 
 <!-- ============================================================ -->
 <!-- RESULTS GALLERY -->
-<!-- ============================================================ -->
 
 ::: {.section-container}
 
@@ -138,7 +126,7 @@ reader should observe and why it matters.
 :::
 
 :::
-
+ ============================================================ -->
 
 <!-- ============================================================ -->
 <!-- QUALITATIVE COMPARISONS -->
