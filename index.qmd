@@ -51,11 +51,11 @@ format:
 ::: {.hero-teaser}
 
 <!-- Option A: Use a static image as the teaser-->
-<!-- ![Teaser figure showing your method overview or key result.](static/images/placeholder-teaser.svg){.teaser-img}-->
+<!-- ![Gem Car](static/images/GEMPIC.png){.GEMPIC-img}-->
 
 
 <!-- Option B: Embed a video teaser (uncomment below, comment out image above)-->
-{{< video static/videos/GEM Driving.webm>}}
+<!--{{< video static/videos/GEM Driving.webm>}}-->
 
 
 :::
@@ -95,39 +95,8 @@ Experiments conducted in both simulation and real-world testing demonstrate that
 {{< video static/videos/GEM Driving.webm>}}
 :::
 
-:::
 
 
-<!-- ============================================================ -->
-<!-- RESULTS GALLERY -->
-
-::: {.section-container}
-
-## Results {.section-title}
-
-::: {.content-text}
-Provide a brief description of the results shown below. Explain what the
-reader should observe and why it matters.
-:::
-
-::: {.results-grid}
-
-::: {.result-card}
-![Result 1 caption](static/images/placeholder-result1.svg)
-:::
-
-::: {.result-card}
-![Result 2 caption](static/images/placeholder-result2.svg)
-:::
-
-::: {.result-card}
-![Result 3 caption](static/images/placeholder-result3.svg)
-:::
-
-:::
-
-:::
- ============================================================ -->
 
 <!-- ============================================================ -->
 <!-- QUALITATIVE COMPARISONS -->
