@@ -1,6 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_description
-# Build directory: /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.

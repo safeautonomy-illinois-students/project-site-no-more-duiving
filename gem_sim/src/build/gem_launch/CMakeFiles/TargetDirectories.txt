@@ -1,9 +1,0 @@
-/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch/CMakeFiles/uninstall.dir
-/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch/CMakeFiles/gem_launch_uninstall.dir
-/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch/CMakeFiles/test.dir
-/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch/CMakeFiles/edit_cache.dir
-/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch/CMakeFiles/rebuild_cache.dir
-/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch/CMakeFiles/list_install_components.dir
-/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch/CMakeFiles/install.dir
-/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch/CMakeFiles/install/local.dir
-/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch/CMakeFiles/install/strip.dir

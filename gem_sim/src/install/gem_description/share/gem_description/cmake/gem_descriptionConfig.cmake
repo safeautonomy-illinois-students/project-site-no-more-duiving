@@ -1,1 +1,0 @@
-/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description/ament_cmake_core/gem_descriptionConfig.cmake
