@@ -36,7 +36,7 @@ class DriveControl(Node):
         self._cap_ds = CaptureDataset(args.dataset_path)
         self._keypresses = set()
         self._cv_bridge = CvBridge()
-        self._max_speed = args.max_speed
+        self._max_speed = 5.0
         self._max_steer = args.max_steer
         if args.run_model:
             self._dev = torch.device("cuda" if torch.cuda.is_available() else "cpu")
