@@ -50,12 +50,13 @@ format:
 
 ::: {.hero-teaser}
 
-<!-- Option A: Use a static image as the teaser -->
+<!-- Option A: Use a static image as the teaser
 ![Teaser figure showing your method overview or key result.](static/images/placeholder-teaser.svg){.teaser-img}
-
-<!-- Option B: Embed a video teaser (uncomment below, comment out image above)
-{{< video static/videos/teaser.mp4 >}}
 -->
+
+<!-- Option B: Embed a video teaser (uncomment below, comment out image above)-->
+{{< video static/videos/GEM Driving.webm>}}
+
 
 :::
 
