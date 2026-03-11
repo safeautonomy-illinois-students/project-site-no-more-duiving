@@ -51,7 +51,7 @@ format:
 ::: {.hero-teaser}
 
 <!-- Option A: Use a static image as the teaser-->
-![Gem Car](static/images/GEMPIC.png){.GEMPIC-img}
+![Gem Car](static/images/GEMPIC.png){.teaser-img}
 
 
 <!-- Option B: Embed a video teaser (uncomment below, comment out image above)-->
@@ -93,77 +93,6 @@ Experiments conducted in both simulation and real-world testing demonstrate that
 ::: {.video-container}
 <!-- Replace with your YouTube or local video embed -->
 {{< video static/videos/GEM Driving.mp4>}}
-:::
-
-
-
-
-<!-- ============================================================ -->
-<!-- QUALITATIVE COMPARISONS -->
-<!-- ============================================================ -->
-
-::: {.section-container}
-
-## Qualitative Comparisons {.section-title}
-
-::: {.content-text}
-Describe the comparison setup — which baselines are you comparing against, and
-what should the reader look for in the side-by-side results.
-:::
-
-::: {.comparison-grid}
-
-::: {.comparison-item}
-![Ours](static/images/placeholder-ours.svg)
-
-**Ours**
-:::
-
-::: {.comparison-item}
-![Baseline A](static/images/placeholder-baseline.svg)
-
-**Baseline A**
-:::
-
-:::
-
-:::
-
-
-<!-- ============================================================ -->
-<!-- INTERACTIVE SLIDER (Optional) -->
-<!-- ============================================================ -->
-
-::: {.section-container}
-
-## Interpolation Demo {.section-title}
-
-::: {.content-text}
-If your method supports interpolation or continuous control, you can add an
-interactive slider here. The example below shows how to set one up.
-:::
-
-::: {.interpolation-panel}
-
-::: {.interpolation-endpoints}
-![Start](static/images/placeholder-start.svg){.endpoint-img}
-
-![End](static/images/placeholder-end.svg){.endpoint-img}
-:::
-
-<input type="range" min="0" max="100" value="50" class="interpolation-slider" id="interpolation-slider">
-<div id="interpolation-value" class="interpolation-value">50%</div>
-
-<script>
-  const slider = document.getElementById('interpolation-slider');
-  const display = document.getElementById('interpolation-value');
-  slider.addEventListener('input', function() {
-    display.textContent = this.value + '%';
-  });
-</script>
-
-:::
-
 :::
 
 
