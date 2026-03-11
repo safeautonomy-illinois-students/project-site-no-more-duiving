@@ -1,0 +1,348 @@
+[0.096s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.096s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fbc77323f40>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fbc77470e50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fbc77470e50>>, mixin_verb=('build',))
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.328s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extension 'ros'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extensions ['cmake', 'python']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extension 'cmake'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extension 'python'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extensions ['python_setup_py']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator) by extension 'python_setup_py'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_description) by extensions ['ignore', 'ignore_ament_install']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_description) by extension 'ignore'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_description) by extension 'ignore_ament_install'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_description) by extensions ['colcon_pkg']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_description) by extension 'colcon_pkg'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_description) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_description) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_description) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_description) by extension 'ros'
+[0.343s] DEBUG:colcon.colcon_core.package_identification:Package 'gem_simulator/gem_description' with type 'ros.ament_cmake' and name 'gem_description'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_gazebo) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_gazebo) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_gazebo) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_gazebo) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_gazebo) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_gazebo) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_gazebo) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_gazebo) by extension 'ros'
+[0.345s] DEBUG:colcon.colcon_core.package_identification:Package 'gem_simulator/gem_gazebo' with type 'ros.ament_cmake' and name 'gem_gazebo'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_launch) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_launch) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_launch) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_launch) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_launch) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_launch) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_launch) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(gem_simulator/gem_launch) by extension 'ros'
+[0.346s] DEBUG:colcon.colcon_core.package_identification:Package 'gem_simulator/gem_launch' with type 'ros.ament_cmake' and name 'gem_launch'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(mp1) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(mp1) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(mp1) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(mp1) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(mp1) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(mp1) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(mp1) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(mp1) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(mp1) by extension 'ros'
+[0.348s] DEBUG:colcon.colcon_core.package_identification:Package 'mp1' with type 'ros.ament_cmake' and name 'mp1'
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.364s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.365s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.366s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 340 installed packages in /opt/ros/humble
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'gem_description' build argument 'cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'gem_description' build argument 'cmake_target' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'gem_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'gem_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'gem_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'gem_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'gem_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'gem_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'gem_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.405s] DEBUG:colcon.colcon_core.verb:Building package 'gem_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description', 'merge_install': False, 'path': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_description', 'symlink_install': True, 'test_result_base': None}
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'mp1' build argument 'cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'mp1' build argument 'cmake_target' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'mp1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'mp1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'mp1' build argument 'cmake_clean_first' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'mp1' build argument 'cmake_force_configure' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'mp1' build argument 'ament_cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'mp1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'mp1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.405s] DEBUG:colcon.colcon_core.verb:Building package 'mp1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1', 'merge_install': False, 'path': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/mp1', 'symlink_install': True, 'test_result_base': None}
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.406s] DEBUG:colcon.colcon_core.verb:Building package 'gem_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo', 'merge_install': False, 'path': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_gazebo', 'symlink_install': True, 'test_result_base': None}
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_launch' build argument 'cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_launch' build argument 'cmake_target' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'gem_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.406s] DEBUG:colcon.colcon_core.verb:Building package 'gem_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch', 'merge_install': False, 'path': '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_launch', 'symlink_install': True, 'test_result_base': None}
+[0.407s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.407s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.407s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_description' with build type 'ament_cmake'
+[0.407s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_description'
+[0.409s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.409s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.409s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.412s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/mp1' with build type 'ament_cmake'
+[0.412s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/mp1'
+[0.412s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.412s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description
+[0.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/mp1 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1
+[1.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description
+[1.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description -- -j12 -l12
+[1.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description -- -j12 -l12
+[1.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description
+[1.990s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gem_description)
+[1.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_description
+[1.993s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description' for CMake module files
+[1.994s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description' for CMake config files
+[1.995s] Level 1:colcon.colcon_core.shell:create_environment_hook('gem_description', 'cmake_prefix_path')
+[1.995s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/hook/cmake_prefix_path.ps1'
+[1.995s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/hook/cmake_prefix_path.dsv'
+[1.996s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/hook/cmake_prefix_path.sh'
+[1.997s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/bin'
+[1.997s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/lib/pkgconfig/gem_description.pc'
+[1.997s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/lib/python3.10/site-packages'
+[1.998s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/bin'
+[1.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/package.ps1'
+[1.999s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/package.dsv'
+[2.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/package.sh'
+[2.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/package.bash'
+[2.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/package.zsh'
+[2.002s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/colcon-core/packages/gem_description)
+[2.003s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gem_description)
+[2.003s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description' for CMake module files
+[2.003s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description' for CMake config files
+[2.004s] Level 1:colcon.colcon_core.shell:create_environment_hook('gem_description', 'cmake_prefix_path')
+[2.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/hook/cmake_prefix_path.ps1'
+[2.004s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/hook/cmake_prefix_path.dsv'
+[2.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/hook/cmake_prefix_path.sh'
+[2.005s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/bin'
+[2.005s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/lib/pkgconfig/gem_description.pc'
+[2.005s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/lib/python3.10/site-packages'
+[2.006s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/bin'
+[2.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/package.ps1'
+[2.007s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/package.dsv'
+[2.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/package.sh'
+[2.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/package.bash'
+[2.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/gem_description/package.zsh'
+[2.009s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description/share/colcon-core/packages/gem_description)
+[2.009s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_gazebo' with build type 'ament_cmake'
+[2.009s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_gazebo'
+[2.009s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.009s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.017s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo
+[2.288s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/mp1 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1
+[2.289s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1 -- -j12 -l12
+[2.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1 -- -j12 -l12
+[2.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1
+[2.471s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mp1)
+[2.472s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1' for CMake module files
+[2.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/mp1
+[2.472s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1' for CMake config files
+[2.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('mp1', 'cmake_prefix_path')
+[2.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/hook/cmake_prefix_path.ps1'
+[2.474s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/hook/cmake_prefix_path.dsv'
+[2.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/hook/cmake_prefix_path.sh'
+[2.475s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/bin'
+[2.475s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/lib/pkgconfig/mp1.pc'
+[2.475s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/lib/python3.10/site-packages'
+[2.475s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/bin'
+[2.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/package.ps1'
+[2.476s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/package.dsv'
+[2.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/package.sh'
+[2.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/package.bash'
+[2.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/package.zsh'
+[2.477s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/colcon-core/packages/mp1)
+[2.477s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mp1)
+[2.478s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1' for CMake module files
+[2.478s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1' for CMake config files
+[2.478s] Level 1:colcon.colcon_core.shell:create_environment_hook('mp1', 'cmake_prefix_path')
+[2.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/hook/cmake_prefix_path.ps1'
+[2.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/hook/cmake_prefix_path.dsv'
+[2.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/hook/cmake_prefix_path.sh'
+[2.480s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/bin'
+[2.480s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/lib/pkgconfig/mp1.pc'
+[2.480s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/lib/python3.10/site-packages'
+[2.480s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/bin'
+[2.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/package.ps1'
+[2.481s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/package.dsv'
+[2.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/package.sh'
+[2.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/package.bash'
+[2.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/mp1/package.zsh'
+[2.482s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/mp1/share/colcon-core/packages/mp1)
+[3.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo' returned '0': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo
+[3.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake --build /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo -- -j12 -l12
+[3.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo' returned '0': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake --build /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo -- -j12 -l12
+[3.922s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake --install /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo
+[4.702s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gem_gazebo)
+[4.702s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo' for CMake module files
+[4.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo' returned '0': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake --install /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_gazebo
+[4.703s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo' for CMake config files
+[4.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('gem_gazebo', 'cmake_prefix_path')
+[4.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/hook/cmake_prefix_path.ps1'
+[4.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/hook/cmake_prefix_path.dsv'
+[4.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/hook/cmake_prefix_path.sh'
+[4.706s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/lib'
+[4.706s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/bin'
+[4.706s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/lib/pkgconfig/gem_gazebo.pc'
+[4.706s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/lib/python3.10/site-packages'
+[4.707s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/bin'
+[4.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/package.ps1'
+[4.707s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/package.dsv'
+[4.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/package.sh'
+[4.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/package.bash'
+[4.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/package.zsh'
+[4.708s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/colcon-core/packages/gem_gazebo)
+[4.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gem_gazebo)
+[4.709s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo' for CMake module files
+[4.709s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo' for CMake config files
+[4.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('gem_gazebo', 'cmake_prefix_path')
+[4.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/hook/cmake_prefix_path.ps1'
+[4.711s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/hook/cmake_prefix_path.dsv'
+[4.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/hook/cmake_prefix_path.sh'
+[4.712s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/lib'
+[4.712s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/bin'
+[4.712s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/lib/pkgconfig/gem_gazebo.pc'
+[4.712s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/lib/python3.10/site-packages'
+[4.712s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/bin'
+[4.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/package.ps1'
+[4.713s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/package.dsv'
+[4.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/package.sh'
+[4.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/package.bash'
+[4.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/gem_gazebo/package.zsh'
+[4.715s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo/share/colcon-core/packages/gem_gazebo)
+[4.715s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_launch' with build type 'ament_cmake'
+[4.715s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_launch'
+[4.715s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.715s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch
+[5.866s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch' returned '0': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/gem_simulator/gem_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch
+[5.866s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake --build /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch -- -j12 -l12
+[5.901s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch' returned '0': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake --build /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch -- -j12 -l12
+[5.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake --install /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch
+[6.096s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gem_launch)
+[6.096s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch' for CMake module files
+[6.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch' returned '0': AMENT_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/src/gem_simulator/install/gem_description:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_launch:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_gazebo:/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/install/gem_description:/opt/ros/humble /usr/bin/cmake --install /home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/build/gem_launch
+[6.097s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch' for CMake config files
+[6.097s] Level 1:colcon.colcon_core.shell:create_environment_hook('gem_launch', 'cmake_prefix_path')
+[6.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/hook/cmake_prefix_path.ps1'
+[6.098s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/hook/cmake_prefix_path.dsv'
+[6.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/hook/cmake_prefix_path.sh'
+[6.099s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/bin'
+[6.099s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/lib/pkgconfig/gem_launch.pc'
+[6.099s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/lib/python3.10/site-packages'
+[6.099s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/bin'
+[6.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/package.ps1'
+[6.100s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/package.dsv'
+[6.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/package.sh'
+[6.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/package.bash'
+[6.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/package.zsh'
+[6.101s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/colcon-core/packages/gem_launch)
+[6.102s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gem_launch)
+[6.102s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch' for CMake module files
+[6.103s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch' for CMake config files
+[6.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('gem_launch', 'cmake_prefix_path')
+[6.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/hook/cmake_prefix_path.ps1'
+[6.104s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/hook/cmake_prefix_path.dsv'
+[6.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/hook/cmake_prefix_path.sh'
+[6.104s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/bin'
+[6.105s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/lib/pkgconfig/gem_launch.pc'
+[6.105s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/lib/python3.10/site-packages'
+[6.105s] Level 1:colcon.colcon_core.environment:checking '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/bin'
+[6.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/package.ps1'
+[6.106s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/package.dsv'
+[6.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/package.sh'
+[6.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/package.bash'
+[6.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/gem_launch/package.zsh'
+[6.107s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/gem_launch/share/colcon-core/packages/gem_launch)
+[6.108s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.108s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.108s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.108s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.112s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.113s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.113s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.124s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.124s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/local_setup.ps1'
+[6.125s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/_local_setup_util_ps1.py'
+[6.126s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/setup.ps1'
+[6.127s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/local_setup.sh'
+[6.127s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/_local_setup_util_sh.py'
+[6.128s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/setup.sh'
+[6.129s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/local_setup.bash'
+[6.130s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/setup.bash'
+[6.131s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/local_setup.zsh'
+[6.131s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tobia2/ECE484/project-site-no-more-duiving/gem_sim/src/install/setup.zsh'

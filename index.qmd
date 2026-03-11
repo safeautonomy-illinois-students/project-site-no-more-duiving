@@ -17,7 +17,7 @@ format:
 ::: {.author-list}
 
 [**Mercy Ajayi**](https://example.com)^1^,
-[**Robert**](https://example.com)^2^,
+[**Robert Szocinski**](https://example.com)^2^,
 [**Humza Zohair**](https://example.com)^1,2^
 [**Saksham**](https://example.com)^1,2^
 

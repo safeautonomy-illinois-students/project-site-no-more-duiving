@@ -1,0 +1,4 @@
+source;share/gem_launch/local_setup.bash
+source;share/gem_launch/local_setup.dsv
+source;share/gem_launch/local_setup.sh
+source;share/gem_launch/local_setup.zsh
