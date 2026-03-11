@@ -55,7 +55,7 @@ format:
 
 
 <!-- Option B: Embed a video teaser (uncomment below, comment out image above)-->
-<!--{{< video static/videos/GEM Driving.webm>}}-->
+<!--{{< video static/videos/GEM_Driving.webm>}}-->
 
 
 :::
@@ -90,7 +90,7 @@ Experiments conducted in both simulation and real-world testing demonstrate that
 
 ## Video {.section-title}
 <!-- Replace with your YouTube or local video embed -->
-{{< video static/videos/GEM Driving.mp4>}}
+{{< video static/videos/GEM_Driving.mp4>}}
 :::
 
 
