@@ -89,8 +89,6 @@ Experiments conducted in both simulation and real-world testing demonstrate that
 ::: {.section-container}
 
 ## Video {.section-title}
-
-::: {.video-container}
 <!-- Replace with your YouTube or local video embed -->
 {{< video static/videos/GEM Driving.mp4>}}
 :::
