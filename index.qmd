@@ -129,15 +129,68 @@ Check out [this survey](https://www.sciencedirect.com/science/article/pii/S09574
 ## BibTeX {.section-title}
 
 ```bibtex
-@article{yourname2026project,
-  author    = {Author One and Author Two and Author Three},
-  title     = {Your Project Title Here},
-  journal   = {Conference or Journal Name},
-  year      = {2026},
+@article{10.1145/359156.359164,
+author = {Lozano-P\'{e}rez, Tom\'{a}s and Wesley, Michael A.},
+title = {An algorithm for planning collision-free paths among polyhedral obstacles},
+year = {1979},
+issue_date = {Oct. 1979},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {22},
+number = {10},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/359156.359164},
+doi = {10.1145/359156.359164},
+journal = {Commun. ACM},
+month = oct,
+pages = {560–570},
+numpages = {11},
+keywords = {polyhedral obstacles, polyhedral objects, path finding, growing objects, graph searching, collision-free paths}
 }
+
+@article{cao2024chasingdaynightrobust,
+      title={Chasing Day and Night: Towards Robust and Efficient All-Day Object Detection Guided by an Event Camera}, 
+      author={Jiahang Cao and Xu Zheng and Yuanhuiyi Lyu and Jiaxu Wang and Renjing Xu and Lin Wang},
+      year={2024},
+      eprint={2309.09297},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2309.09297}, 
+}
+
+@article{ZHAO2024122836,
+title = {Autonomous driving system: A comprehensive survey},
+journal = {Expert Systems with Applications},
+volume = {242},
+pages = {122836},
+year = {2024},
+issn = {0957-4174},
+doi = {https://doi.org/10.1016/j.eswa.2023.122836},
+url = {https://www.sciencedirect.com/science/article/pii/S0957417423033389},
+author = {Jingyuan Zhao and Wenyi Zhao and Bo Deng and Zhenghong Wang and Feng Zhang and Wenxiang Zheng and Wanke Cao and Jinrui Nan and Yubo Lian and Andrew F. Burke},
+keywords = {Autonomous driving, Deep learning, Scene perception, Localization, Motion planning, Decision-making},
+abstract = {Automation is increasingly at the forefront of transportation research, with the potential to bring fully autonomous vehicles to our roads in the coming years. This comprehensive survey provides a holistic look at the essential components and cutting-edge technologies that are driving the development and implementation of autonomous driving. It starts by evaluating two critical system architectures that are fundamental to the operation of autonomous vehicles: the layered and end-to-end structures. It then examines the critical areas of scene perception and localization, emphasizing the importance of sensor technologies. These technologies are vital for tasks such as object detection and semantic segmentation, which allow vehicles to understand and navigate their environment. A special focus is given to the complex topic of object detection, along with suggestions for how it can be enhanced. The survey then proceeds to provide detailed discussions on path planning, trajectory prediction, and decision-making processes. These elements are crucial for the smooth navigation of autonomous vehicles, and the survey highlights the role of artificial intelligence (AI) and machine learning in these processes. Overall, the survey presents the rapid progress in the field of autonomous driving, offering a comprehensive assessment of the technologies and innovations that are essential for moving toward a safe and efficient autonomous future.}
+}
+
+@article{SADLI2022255,
+title = {Map-Matching-Based Localization Using Camera and Low-Cost GPS For Lane-Level Accuracy},
+journal = {Procedia Computer Science},
+volume = {198},
+pages = {255-262},
+year = {2022},
+note = {12th International Conference on Emerging Ubiquitous Systems and Pervasive Networks / 11th International Conference on Current and Future Trends of Information and Communication Technologies in Healthcare},
+issn = {1877-0509},
+doi = {https://doi.org/10.1016/j.procs.2021.12.237},
+url = {https://www.sciencedirect.com/science/article/pii/S1877050921024765},
+author = {Rahmad Sadli and Mohamed Afkir and Abdenour Hadid and Atika Rivenq and Abdelmalik Taleb-Ahmed},
+keywords = {autonomous driving, lane-level localization, lane detection, GNSS, GPS, map-matching},
+abstract = {For self-driving systems or autonomous vehicles (AVs), accurate lane-level localization is a necessity for performing complex driving maneuvers. Classical GNSS based methods are usually not accurate enough to have lane-level localization to support the AV’s maneuvers. LiDAR-based localization can provide accurate localization. However, the LiDAR price is still one of the big issues preventing this kind of solution from becoming wide-spread commodities. Therefore, in this work, we propose a low-cost solution for lane-level localization using a vision-based system and a low-cost GPS to achieve high precision lane-level localization. Experiments in real-world and real-time demonstrate that the proposed method achieves good lane-level localization accuracy, outperforming solutions based on only GPS.}
+}
+
 ```
 
 :::
+
 
 
 <!-- ============================================================ -->
