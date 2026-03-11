@@ -51,7 +51,7 @@ format:
 ::: {.hero-teaser}
 
 <!-- Option A: Use a static image as the teaser-->
-<!-- ![Gem Car](static/images/GEMPIC.png){.GEMPIC-img}-->
+![Gem Car](static/images/GEMPIC.png){.GEMPIC-img}
 
 
 <!-- Option B: Embed a video teaser (uncomment below, comment out image above)-->
@@ -92,7 +92,7 @@ Experiments conducted in both simulation and real-world testing demonstrate that
 
 ::: {.video-container}
 <!-- Replace with your YouTube or local video embed -->
-{{< video static/videos/GEM Driving.webm>}}
+{{< video static/videos/GEM Driving.mp4>}}
 :::
 
 
