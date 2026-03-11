@@ -210,14 +210,16 @@ interactive slider here. The example below shows how to set one up.
 
 Here are some related works in this area:
 
-- [Related Paper 1](https://example.com) introduces an idea similar to ours for [topic].
-- [Related Paper 2](https://example.com) also addresses [problem] using [approach].
-- [Related Paper 3](https://example.com) proposes [technique] which is complementary to our method.
+- [Map-Matching-Based Localization Using Camera and Low-Cost GPS For Lane-Level Accuracy](https://www.sciencedirect.com/science/article/pii/S1877050921024765) introduces a method to determine the vehicle’s pose with high accuracy to the ground truth.
+- [An algorithm for planning collision-free paths among polyhedral obstacles
+](https://dl.acm.org/doi/10.1145/359156.359164) addresses creating paths around obstacles - an improvement from the base requirements of simply stopping upon detection.
+- [Chasing Day and Night: Towards Robust and Efficient All-Day Object Detection Guided by an Event Camera](https://arxiv.org/html/2309.09297v2) proposes a technique to make detection models more robust.
 
-Check out [this survey](https://example.com) for a comprehensive overview of the field.
+Check out [this survey](https://www.sciencedirect.com/science/article/pii/S0957417423033389) for a comprehensive overview of the field.
 :::
 
 :::
+
 
 
 <!-- ============================================================ -->
