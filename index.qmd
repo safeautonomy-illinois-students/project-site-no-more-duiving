@@ -11,7 +11,7 @@ format:
 # No More Duiving {.title}
 
 ::: {.subtitle}
-:)
+A GEM Car Project
 :::
 
 ::: {.author-list}
