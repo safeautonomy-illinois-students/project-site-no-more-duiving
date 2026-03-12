@@ -19,13 +19,13 @@ format:
 [**Mercy Ajayi**](https://example.com)^1^,
 [**Robert Szocinski**](https://example.com)^2^,
 [**Humza Zohair**](https://example.com)^1,2^
-[**Saksham**](https://example.com)^1,2^
+[**Saksham Jairath**](https://example.com)^1,2^
 
 :::
 
 ::: {.affiliation-list}
 
-^1^University of Illinois,  ^2^ECE484 / Company
+^1^University of Illinois,  ^2^ECE484
 
 :::
 
