@@ -90,7 +90,7 @@ Experiments conducted in both simulation and real-world testing demonstrate that
 
 ## Video {.section-title}
 <!-- Replace with your YouTube or local video embed -->
-{{< video static/videos/GEM_Driving.mp4>}}
+{{< video static/images/GEM Driving.mp4>}}
 :::
 
 
