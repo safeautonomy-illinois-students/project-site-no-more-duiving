@@ -16,28 +16,28 @@ format:
 
 ::: {.author-list}
 
-[**Mercy Ajayi**](https://example.com)^1^,
-[**Robert Szocinski**](https://example.com)^2^,
-[**Humza Zohair**](https://example.com)^1,2^
-[**Saksham**](https://example.com)^1,2^
+[**Mercy Ajayi**](https://example.com),
+[**Robert Szocinski**](https://example.com),
+[**Humza Zohair**](https://example.com)
+[**Saksham Jairath**](https://example.com)
 
 :::
 
 ::: {.affiliation-list}
 
-^1^University of Illinois,  ^2^ECE484 / Company
+^1^University of Illinois,  ^2^ECE484
 
 :::
 
-::: {.button-row}
+<!-- ::: {.button-row -->
 
-[[{{< fa file-pdf >}} Paper]{.btn-text}](https://arxiv.org/pdf/XXXX.XXXXX){.btn .btn-primary}
-[[{{< fa brands arxiv >}} arXiv]{.btn-text}](https://arxiv.org/abs/XXXX.XXXXX){.btn .btn-primary}
-[[{{< fa video >}} Video]{.btn-text}](https://www.youtube.com/watch?v=cSQTZoZPJzs){.btn .btn-primary}
-[[{{< fa brands github >}} Code]{.btn-text}](https://github.com/){.btn .btn-primary}
-[[{{< fa database >}} Data]{.btn-text}](https://example.com){.btn .btn-primary}
+<!--[[{{< fa file-pdf >}} Paper]{.btn-text}](https://arxiv.org/pdf/XXXX.XXXXX){.btn .btn-primary} -->
+<!--[[{{< fa brands arxiv >}} arXiv]{.btn-text}](https://arxiv.org/abs/XXXX.XXXXX){.btn .btn-primary} -->
+<!--[[{{< fa video >}} Video]{.btn-text}](https://www.youtube.com/watch?v=cSQTZoZPJzs){.btn .btn-primary} -->
+<!--[[{{< fa brands github >}} Code]{.btn-text}](https://github.com/){.btn .btn-primary} -->
+<!--[[{{< fa database >}} Data]{.btn-text}](https://example.com){.btn .btn-primary} -->
 
-:::
+<!--:::-->
 
 :::
 
@@ -163,7 +163,7 @@ Check out [this survey](https://www.sciencedirect.com/science/article/pii/S09574
 ## BibTeX {.section-title}
 ```bibtex
 @article{Implementing GEM protocol for Object Detection, Lane-Keeping, Parking, ECE484 Spring 2026
-  author    = {Robert Szocinski and Humza Zohair and Mercy Ajayi and Saksham },
+  author    = {Robert Szocinski and Humza Zohair and Mercy Ajayi and Saksham Jairath},
   title     = {No More Duiving},
   year      = {2026},
 }
