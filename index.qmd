@@ -11,7 +11,7 @@ format:
 # No More Duiving {.title}
 
 ::: {.subtitle}
-A GEM Car Project
+:)
 :::
 
 ::: {.author-list}
@@ -19,16 +19,27 @@ A GEM Car Project
 [**Mercy Ajayi**](https://example.com)^1^,
 [**Robert Szocinski**](https://example.com)^2^,
 [**Humza Zohair**](https://example.com)^1,2^
-[**Saksham Jairath**](https://example.com)^1,2^
+[**Saksham**](https://example.com)^1,2^
 
 :::
 
 ::: {.affiliation-list}
 
-^1^University of Illinois,  ^2^ECE484
+^1^University of Illinois,  ^2^ECE484 / Company
 
 :::
 
+::: {.button-row}
+
+[[{{< fa file-pdf >}} Paper]{.btn-text}](https://arxiv.org/pdf/XXXX.XXXXX){.btn .btn-primary}
+[[{{< fa brands arxiv >}} arXiv]{.btn-text}](https://arxiv.org/abs/XXXX.XXXXX){.btn .btn-primary}
+[[{{< fa video >}} Video]{.btn-text}](https://www.youtube.com/watch?v=cSQTZoZPJzs){.btn .btn-primary}
+[[{{< fa brands github >}} Code]{.btn-text}](https://github.com/){.btn .btn-primary}
+[[{{< fa database >}} Data]{.btn-text}](https://example.com){.btn .btn-primary}
+
+:::
+
+:::
 
 
 <!-- ============================================================ -->
@@ -68,8 +79,44 @@ Our approach uses a GPS interface to receive a target coordinate from a mobile a
 Experiments conducted in both simulation and real-world testing demonstrate that the system successfully maintains lane adherence, reacts safely to obstacles, and reaches the target destination while stopping within two meters of the goal. These results highlight the feasibility of deploying a modular autonomy stack for practical robotaxi-style vehicle summoning.
 :::
 
-:::
+<!-- ============================================================ -->
+<!-- PLAN -->
+<!-- ============================================================ -->
 
+## Plan {.section-title}
+
+::: {.content-text}
+
+A GPS coordinate is sent from a mobile app to the car. The car exits its parking spot, drives to that location, stays in the lane, and stops for any obstacles or stop signs along the way.
+
+### Sensing
+Provides raw data to all other modules. Inputs: front-facing camera, GPS receiver, and IMU.
+
+### Perception
+Determines where the lane is and whether obstacles are present.
+
+- **Lane Detection** — **ENet** segments lane pixels from a bird's-eye view warped image. A **sliding window** fits two polynomials to the lane lines and computes cross-track and heading error.
+- **Obstacle & Sign Detection** — Open source model classifies traffic cones and stop signs. Estimate distance based on bounding box size to know when to stop.
+
+### Localization
+Determines where the car is. GPS provides global position. **Visual odometry** uses consecutive camera frames to estimate how the vehicle has moved between GPS updates, maintaining an accurate pose estimate throughout the route.
+
+### Planning & Decision
+Determines which waypoints to follow to reach the goal. The lane centerline is recorded once by driving the route in the simulator and logging GPS coordinates as nodes. **A\*** then searches this node graph to find the shortest path from the car's current position to the goal, and determines lane entry direction by comparing the car's current heading to the goal coordinate. A **finite state machine** manages DRIVE → STOP → WAIT → RESUME based on perception inputs, and stops the car once within 2 m of the goal.
+
+### Control
+Executes the plan. **Pure Pursuit** computes the steering angle by targeting a lookahead point on the waypoint path. A **PID controller** manages speed, slowing on turns and near the goal.
+
+### Team
+
+| Module | Owner |
+|---|---|
+| Lane Perception | Mercy |
+| Obstacle & Sign Detection | Saksham |
+| Localization + Planning | Humza |
+| Control | Robert |
+
+:::
 
 <!-- ============================================================ -->
 <!-- OVERVIEW / METHOD VIDEO -->
