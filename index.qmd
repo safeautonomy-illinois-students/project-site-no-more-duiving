@@ -25,7 +25,7 @@ format:
 
 ::: {.affiliation-list}
 
-^1^University of Illinois,  ^2^ECE484
+University of Illinois,  ECE484
 
 :::
 
