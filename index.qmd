@@ -140,7 +140,6 @@ Executes the plan. **Pure Pursuit** computes the steering angle by targeting a l
 
 
 
-
 <!-- ============================================================ -->
 <!-- MIDPOINT CHECKPOINT -->
 <!-- ============================================================ -->
@@ -149,61 +148,47 @@ Executes the plan. **Pure Pursuit** computes the steering angle by targeting a l
 
 ## Midpoint Checkpoint {.section-title}
 
-
-
-::: {.section-container}
-
-## Video {.section-title}
-<!-- Replace with your YouTube or local video embed -->
-{{< video static/images/Highbay_Rosbags.mp4>}}
-:::
-
-::: {.content-text}
-
-Collecting Rosbags from Highbay
-::: 
-:::
-
 ::: {.content-text}
 
 ### What We Have Working
 
-- End-to-end pipeline from GPS goal → waypoint generation → control execution  
-- Lane following using vision-based perception with stable tracking in simulation  
-- Park-to-drive maneuver successfully exits parking and aligns with lane  
-- Obstacle and stop sign detection triggers stopping behavior  
+- **Lane detection in simulation** using BEV (bird’s-eye view) transformation with accurate lane boundary estimation  
+- Stable polynomial fitting for computing cross-track and heading error  
+- **Perception model trained on real-world rosbags**, improving robustness beyond simulation  
+- **Waypoint-following controller** (Pure Pursuit + PID) that accurately tracks predefined paths  
 
 ### System Integration Status
 
-All core modules (Perception, Localization, Planning, Control) are integrated and communicate in a closed-loop system. The vehicle can navigate toward a goal while maintaining lane position and responding to perceived obstacles.
+Perception and control modules are both functional independently. The controller reliably follows waypoint trajectories, and perception produces consistent lane estimates in simulation.
 
-However, performance varies between simulation and real-world deployment due to sensing noise and environmental variability.
+Initial integration of lane detection with the controller is working, but performance is not yet fully stable. The vehicle can follow lanes in some scenarios, though issues remain under certain conditions.
+
+Full end-to-end deployment on the physical vehicle is still in progress.
 
 ### Results So Far
 
-- Successfully follows lane trajectories in simulation environments  
-- Reaches goal locations within ~2 meters accuracy  
-- Detects and stops for cones and stop signs  
-- Demonstrated full pipeline in both simulation and initial real-world tests  
+- Accurate waypoint tracking using the controller  
+- Consistent lane detection performance in simulation  
+- Partial closed-loop lane following using perception + control  
+- Successful training pipeline using real-world rosbag data  
 
 ### Challenges
 
-- GPS noise causes drift in global positioning  
-- Lane detection is sensitive to lighting and worn lane markings  
-- Visual odometry can accumulate error over longer distances  
-- Controller tuning required to reduce oscillations during turns  
+- Instability when coupling lane detection with control (e.g., oscillations or drift)  
+- Sensitivity of perception to lighting and lane quality  
+- Domain gap between simulation and real-world data  
+- Limited real-world closed-loop testing  
 
 ### Next Steps
 
-- Improve robustness of lane detection under varying lighting conditions  
-- Refine localization by better fusing GPS and visual odometry  
-- Enhance obstacle handling (e.g., path replanning instead of stopping)  
-- Expand real-world testing across more diverse environments  
+- Improve stability of perception-driven control (tuning and filtering)  
+- Strengthen robustness of lane detection in real-world conditions  
+- Complete full system integration (perception → planning → control)  
+- Expand real-world testing on the GEM vehicle  
 
 :::
 
 :::
-
 
 
 
