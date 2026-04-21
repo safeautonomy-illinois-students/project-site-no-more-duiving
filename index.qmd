@@ -168,9 +168,8 @@ Collecting Rosbags from Highbay
 ### What We Have Working
 
 - **Lane detection in simulation** using BEV (bird’s-eye view) transformation with accurate lane boundary estimation  
-- Stable polynomial fitting for computing cross-track and heading error  
-- **Perception model trained on real-world rosbags**, improving robustness beyond simulation  
-- **Waypoint-following controller** (Pure Pursuit + PID) that accurately tracks predefined paths  
+- Stable polynomial fitting for computing cross-track and heading error   
+- **Waypoint-following controller** (Pure Pursuit + Stanley) that accurately tracks predefined paths  
 
 ### System Integration Status
 
@@ -187,12 +186,118 @@ Full end-to-end deployment on the physical vehicle is still in progress.
 - Partial closed-loop lane following using perception + control  
 - Successful training pipeline using real-world rosbag data  
 
+<!-- ============================================================ -->
+<!-- CONTROLLER DESIGN -->
+<!-- ============================================================ -->
+
+::: {.section-container}
+
+## Controller Design {.section-title}
+
+::: {.content-text}
+
+Our system uses a hybrid control architecture combining three components: a longitudinal speed controller, a Pure Pursuit lateral controller for waypoint tracking, and a Stanley controller for lane keeping. These are blended to achieve stable and responsive vehicle behavior.
+
+### Longitudinal Controller (Speed Control)
+
+The longitudinal controller regulates vehicle speed based on path geometry. It adjusts speed using a simple ramp strategy:
+
+- Accelerates toward a maximum speed on straight segments  
+- Decelerates when approaching turns or large heading changes  
+
+This is determined by comparing the vehicle’s current heading to a lookahead waypoint. If the angular difference is small, the vehicle speeds up; otherwise, it slows down. This helps maintain stability while navigating curves.
+
+---
+
+### Pure Pursuit Controller (Waypoint Tracking)
+
+The Pure Pursuit controller is responsible for following a sequence of waypoints. It works by:
+
+- Selecting a **lookahead point** ahead of the vehicle along the path  
+- Computing the curvature required to reach that point  
+- Converting this curvature into a steering angle  
+
+This method produces smooth and stable path tracking, especially when waypoints are well-defined. In our system, we further improve performance by **densifying waypoints in curved regions**, allowing the controller to better handle turns.
+
+---
+
+### Stanley Controller (Lane Keeping)
+
+The Stanley controller corrects the vehicle’s position relative to the detected lane using two signals:
+
+- **Heading Error (HE):** difference between vehicle orientation and lane direction  
+- **Cross-Track Error (XTE):** lateral distance from the lane center  
+
+The steering command is computed as:
+
+\[
+\delta = HE + \tan^{-1}\left(\frac{k \cdot XTE}{v}\right)
+\]
+
+where \(k\) is a gain parameter and \(v\) is vehicle speed.
+
+This controller helps keep the vehicle centered in the lane and aligned with the road, especially when perception data is reliable.
+
+---
+
+### Hybrid Control Strategy
+
+To combine waypoint tracking and lane keeping, we use a **weighted blending approach**:
+
+- Pure Pursuit provides the primary steering command  
+- Stanley provides a corrective term based on lane perception  
+- Final steering = weighted sum of both controllers  
+
+When lane detections are fresh, the Stanley controller contributes to steering corrections. If perception data becomes stale or unavailable, the system falls back to pure waypoint tracking.
+
+This hybrid approach allows the system to:
+- Follow global paths using waypoints  
+- Maintain local lane alignment when perception is available  
+- Remain robust to temporary perception failures  
+
+:::
+
+:::
+
+<!-- ============================================================ -->
+<!-- PERFORMANCE / EVALUATION -->
+<!-- ============================================================ -->
+
+::: {.section-container}
+
+## Performance Evaluation {.section-title}
+
+::: {.content-text}
+
+To evaluate the behavior of our controller and lane-following system, we analyze key metrics during waypoint tracking and lane-following experiments.
+
+### Speed Profile
+
+![Speed Plot](static/images/speed_plot.png){.teaser-img}
+
+This plot shows the vehicle’s speed over time. The controller maintains a generally stable velocity while slowing appropriately during turns and near stopping conditions. Minor fluctuations are present due to controller tuning and environmental response.
+
+### Heading Error (HE)
+
+![Heading Error Plot](static/images/he_plot.png){.teaser-img}
+
+Heading error represents the difference between the vehicle’s orientation and the desired path direction. The plot shows that heading error remains bounded, though occasional spikes occur during sharper turns or when perception input is noisy.
+
+### Cross-Track Error (XTE)
+
+![Cross Track Error Plot](static/images/xte_plot.png){.teaser-img}
+
+Cross-track error measures lateral deviation from the desired path. The controller keeps this error relatively small during waypoint following, though increased deviation appears when integrating lane detection, indicating areas for further tuning and stabilization.
+
+:::
+
+:::
+
 ### Challenges
 
 - Instability when coupling lane detection with control (e.g., oscillations or drift)  
 - Sensitivity of perception to lighting and lane quality  
 - Domain gap between simulation and real-world data  
-- Limited real-world closed-loop testing  
 
 ### Next Steps
 
