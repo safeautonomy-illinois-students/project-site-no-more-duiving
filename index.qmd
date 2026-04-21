@@ -259,7 +259,7 @@ This method produces smooth and stable path tracking, especially when waypoints 
 
 <!-- Video: Controller Only -->
 ::: {.hero-teaser}
-{{< video static/videos/Controller_only.mp4>}}
+{{< video static/images/Controller_only.mp4>}}
 :::
 
 ---
@@ -304,7 +304,7 @@ This hybrid approach allows the system to:
 
 <!-- Video: Perception + Control -->
 ::: {.hero-teaser}
-{{< video static/videos/Controller_only.mp4>}}
+{{< video static/images/Controller_only.mp4>}}
 :::
 
 <!-- ============================================================ -->
