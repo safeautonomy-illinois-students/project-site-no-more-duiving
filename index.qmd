@@ -301,16 +301,20 @@ This method produces smooth and stable path tracking, especially when waypoints 
 
 The Stanley controller corrects the vehicle’s position relative to the detected lane using two signals:
 
-- **Heading Error (HE):** difference between vehicle orientation and lane direction  
-- **Cross-Track Error (XTE):** lateral distance from the lane center  
+- **Heading Error ($\psi_e$):** difference between vehicle orientation and lane direction  
+- **Cross-Track Error ($e$):** lateral distance from the lane center at the front axle  
 
 The steering command is computed as:
 
-\[
-\delta = \psi_e + \arctan\!\left(\frac{k \cdot e}{v_x}\right)
-\]
+$$\delta = \psi_e + \arctan\left(\frac{k \cdot e}{v_x}\right)$$
 
-where \(k\) is a gain parameter and \(v\) is vehicle speed.
+| Symbol | Meaning |
+|---|---|
+| $\delta$ | Steering angle command |
+| $\psi_e$ | Heading error |
+| $e$ | Cross-track error at the front axle |
+| $k$ | Tunable gain |
+| $v_x$ | Longitudinal vehicle speed |
 
 This controller helps keep the vehicle centered in the lane and aligned with the road, especially when perception data is reliable.
 
