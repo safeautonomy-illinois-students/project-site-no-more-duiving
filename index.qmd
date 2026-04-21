@@ -150,6 +150,21 @@ Executes the plan. **Pure Pursuit** computes the steering angle by targeting a l
 
 ::: {.content-text}
 
+
+::: {.section-container}
+
+## Video {.section-title}
+<!-- Replace with your YouTube or local video embed -->
+{{< video static/images/Highbay_Rosbags.mp4>}}
+:::
+
+::: {.content-text}
+
+Collecting Rosbags from Highbay
+::: 
+:::
+
+
 ### What We Have Working
 
 - **Lane detection in simulation** using BEV (bird’s-eye view) transformation with accurate lane boundary estimation  
