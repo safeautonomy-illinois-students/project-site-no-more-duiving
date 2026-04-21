@@ -202,6 +202,11 @@ The plot shows the training loss decreasing over time, indicating that the model
 
 :::
 
+<!-- Video: Rosbag Training -->
+::: {.hero-teaser}
+{{< video static/images/ros_bag_mask.webm>}}
+:::
+
 ### Results So Far
 
 - Accurate waypoint tracking using the controller  
