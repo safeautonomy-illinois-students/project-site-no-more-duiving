@@ -179,6 +179,28 @@ Initial integration of lane detection with the controller is working, but perfor
 
 Full end-to-end deployment on the physical vehicle is still in progress.
 
+<!-- ============================================================ -->
+<!-- TRAINING LOSS -->
+<!-- ============================================================ -->
+
+::: {.section-container}
+
+## Training Loss {.section-title}
+
+::: {.content-text}
+
+![Training Loss](static/images/loss.png){.teaser-img}
+
+The plot shows the training loss decreasing over time, indicating that the model is successfully learning meaningful features from the data.
+
+- Loss consistently decreases across epochs, demonstrating stable training behavior  
+- No major divergence or instability is observed  
+- Convergence suggests the model is effectively fitting both simulated and real-world (rosbag) data  
+
+:::
+
+:::
+
 ### Results So Far
 
 - Accurate waypoint tracking using the controller  
@@ -232,6 +254,21 @@ This is determined by comparing the vehicle’s current heading to a lookahead w
 
 ---
 
+::: {.section-container}
+
+## Controller Architecture {.section-title}
+
+
+
+::: {.hero-teaser}
+
+![Controller Block Diagram](static/images/Controller_Block_Diagram.png){.teaser-img}
+
+:::
+
+:::
+
+
 ### Pure Pursuit Controller (Waypoint Tracking)
 
 The Pure Pursuit controller is responsible for following a sequence of waypoints. It works by:
@@ -241,6 +278,11 @@ The Pure Pursuit controller is responsible for following a sequence of waypoints
 - Converting this curvature into a steering angle  
 
 This method produces smooth and stable path tracking, especially when waypoints are well-defined. In our system, we further improve performance by **densifying waypoints in curved regions**, allowing the controller to better handle turns.
+
+<!-- Video: Controller Only -->
+::: {.hero-teaser}
+{{< video static/videos/Controller_only.mp4>}}
+:::
 
 ---
 
@@ -280,6 +322,11 @@ This hybrid approach allows the system to:
 
 :::
 
+:::
+
+<!-- Video: Perception + Control -->
+::: {.hero-teaser}
+{{< video static/videos/Controller_only.mp4>}}
 :::
 
 <!-- ============================================================ -->
