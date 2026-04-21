@@ -180,6 +180,68 @@ Initial integration of lane detection with the controller is working, but perfor
 
 Full end-to-end deployment on the physical vehicle is still in progress.
 
+
+
+
+
+
+
+<!-- ============================================================ -->
+<!-- Perception -->
+<!-- ============================================================ -->
+
+
+::: {.section-container}
+
+## Perception {.section-title}
+
+::: {.content-text}
+
+![Fourth Order Polynomial Fit](static/images/accurate.png){.teaser-img}
+
+Integration of previous method (mp1) resulted in two MAJOR issues that had to be resolved to work on the highbay map, and  gave useful insight into potential roadblocks and necessary tuning for real-world application. Another thing was the finding of a more insightful BEV for the vehicle.
+
+-Cones, grass, boundaries all came up when using a mask targeting "lighter colors". Attempts to negate this affect in post-processing with filters, histogram history and post-processing masks all proved to be unsucessful. The cones in BEV would both have more pixels and appear like a lane due to the warping effect. First fix: target preprocessing mask to attack lanes. Effect: model learns to identify with lanes something other than simple light color or is at least more stringent.
+
+![Cones Appearing as Lanes](static/images/cones.png){.teaser-img}
+
+-Once the first issue was accounted for, second major one on highbay simulation was the curve and when two lanes appeared next to each other. Again, postprocessing attempts were made to negate the fact that when one lane was visible, the lines would appear on top of each other or worse, the lanes would go towards stray pixels and noise from imperfect filtration that was not an issue on straight sections. The attempted solution of having a collapsible minimum threshold on the lane size using the lane width was helpful (and used in the ultimate version) but did not hold consistently and despite efforts of weighing pixels in the BEV to target one lane, no combination was consistently sucessful at filtering out only the lane the car was in.
+
+![Second Lane Pulling Line Fits](static/images/lanes.png){.teaser-img}
+
+-Final Fix: The model was retrained at targeting the outside line of the lane, and then using a derived lane width, it would infer the centerline and other side of the lane. It fit a fourth power polynomial (splines were fitting well but the error was hard to get using non-analytical methods with accuracy). Ultimately, the model needs more training in the simulation due to some noise when the wrong side of the lane is visible on short turns (currently it knows to make a sharp bend when this is the case, but it results in purely interpolated turns which is suboptimal). As well as some noisy and slighlty inaccurate XTE error when drawing the curve up to the vehicle. However, these issues will be much more approachable in the real world with the side cameras, simpler track and now that we went through learning what fixes are more appropriate, we hope to make quick progress with tackling the issues in the real-world. And even have insight for how to make sure the car works when there are multiple lanes despite ENets inherent restraints. The plan is to potentially upgrade to a better neural network anyway, to make it work better on all road types and improve the robustness.
+
+
+:::
+
+:::
+
+<!-- Video: Rosbag Training -->
+::: {.hero-teaser}
+{{< video static/images/ros_bag_mask.webm>}}
+:::
+
+### Results So Far
+
+- Accurate waypoint tracking using the controller  
+- Consistent lane detection performance in simulation  
+- Partial closed-loop lane following using perception + control  
+- Successful training pipeline using real-world rosbag data  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- ============================================================ -->
 <!-- TRAINING LOSS -->
 <!-- ============================================================ -->
