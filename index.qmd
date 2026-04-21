@@ -11,7 +11,7 @@ format:
 # No More Duiving {.title}
 
 ::: {.subtitle}
-:)
+Robotaxi Summon (GEM)
 :::
 
 ::: {.author-list}
@@ -129,11 +129,25 @@ Executes the plan. **Pure Pursuit** computes the steering angle by targeting a l
 {{< video static/images/GEM_Driving.mp4>}}
 
 
-::: {.content-text}
 
-Collecting Rosbags from Highbay
-::: 
-:::
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================================ -->
+<!-- MIDPOINT CHECKPOINT -->
+<!-- ============================================================ -->
+
+::: {.section-container}
+
+## Midpoint Checkpoint {.section-title}
 
 
 
@@ -143,6 +157,64 @@ Collecting Rosbags from Highbay
 <!-- Replace with your YouTube or local video embed -->
 {{< video static/images/Highbay_Rosbags.mp4>}}
 :::
+
+::: {.content-text}
+
+Collecting Rosbags from Highbay
+::: 
+:::
+
+::: {.content-text}
+
+### What We Have Working
+
+- End-to-end pipeline from GPS goal → waypoint generation → control execution  
+- Lane following using vision-based perception with stable tracking in simulation  
+- Park-to-drive maneuver successfully exits parking and aligns with lane  
+- Obstacle and stop sign detection triggers stopping behavior  
+
+### System Integration Status
+
+All core modules (Perception, Localization, Planning, Control) are integrated and communicate in a closed-loop system. The vehicle can navigate toward a goal while maintaining lane position and responding to perceived obstacles.
+
+However, performance varies between simulation and real-world deployment due to sensing noise and environmental variability.
+
+### Results So Far
+
+- Successfully follows lane trajectories in simulation environments  
+- Reaches goal locations within ~2 meters accuracy  
+- Detects and stops for cones and stop signs  
+- Demonstrated full pipeline in both simulation and initial real-world tests  
+
+### Challenges
+
+- GPS noise causes drift in global positioning  
+- Lane detection is sensitive to lighting and worn lane markings  
+- Visual odometry can accumulate error over longer distances  
+- Controller tuning required to reduce oscillations during turns  
+
+### Next Steps
+
+- Improve robustness of lane detection under varying lighting conditions  
+- Refine localization by better fusing GPS and visual odometry  
+- Enhance obstacle handling (e.g., path replanning instead of stopping)  
+- Expand real-world testing across more diverse environments  
+
+:::
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- ============================================================ -->
