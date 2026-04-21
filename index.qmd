@@ -278,19 +278,6 @@ This is determined by comparing the vehicle’s current heading to a lookahead w
 
 ---
 
-::: {.section-container}
-
-## Controller Architecture {.section-title}
-
-
-
-::: {.hero-teaser}
-
-![Controller Block Diagram](static/images/Controller_Block_Diagram.png){.teaser-img}
-
-:::
-
-:::
 
 
 ### Pure Pursuit Controller (Waypoint Tracking)
@@ -320,7 +307,7 @@ The Stanley controller corrects the vehicle’s position relative to the detecte
 The steering command is computed as:
 
 \[
-\delta = HE + \tan^{-1}\left(\frac{k \cdot XTE}{v}\right)
+\delta = \psi_e + \arctan\!\left(\frac{k \cdot e}{v_x}\right)
 \]
 
 where \(k\) is a gain parameter and \(v\) is vehicle speed.
