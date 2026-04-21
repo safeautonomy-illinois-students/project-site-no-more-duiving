@@ -127,6 +127,21 @@ Executes the plan. **Pure Pursuit** computes the steering angle by targeting a l
 ## Video {.section-title}
 <!-- Replace with your YouTube or local video embed -->
 {{< video static/images/GEM_Driving.mp4>}}
+
+
+::: {.content-text}
+
+Collecting Rosbags from Highbay
+::: 
+:::
+
+
+
+::: {.section-container}
+
+## Video {.section-title}
+<!-- Replace with your YouTube or local video embed -->
+{{< video static/images/Highbay_Rosbags.mp4>}}
 :::
 
 
