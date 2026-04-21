@@ -195,7 +195,7 @@ Full end-to-end deployment on the physical vehicle is still in progress.
 
 ## Perception {.section-title}
 
-::: {.content-text}
+::: 
 
 ![Fourth Order Polynomial Fit](static/images/accurate.png){.teaser-img}
 
@@ -215,27 +215,6 @@ Integration of previous method (mp1) resulted in two MAJOR issues that had to be
 :::
 
 :::
-
-<!-- Video: Rosbag Training -->
-::: {.hero-teaser}
-{{< video static/images/ros_bag_mask.webm>}}
-:::
-
-### Results So Far
-
-- Accurate waypoint tracking using the controller  
-- Consistent lane detection performance in simulation  
-- Partial closed-loop lane following using perception + control  
-- Successful training pipeline using real-world rosbag data  
-
-
-
-
-
-
-
-
-
 
 
 
